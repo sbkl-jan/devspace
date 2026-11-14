@@ -1,0 +1,143 @@
+DEVSPACE - GIT COMMAND DOCUMENTATION
+
+1. cd $HOME\Downloads
+   Moves the terminal to the Downloads directory.
+
+2. mkdir DevSpace
+   Creates the project folder.
+
+3. cd DevSpace
+   Enters the project directory.
+
+4. New-Item index.html -ItemType File
+   Creates the homepage HTML file.
+
+5. New-Item about.html -ItemType File
+   Creates the About page HTML file.
+
+6. git init
+   Initializes a new Git repository.
+
+7. Get-ChildItem
+   Lists the files in the current directory.
+
+8. Get-Content index.html
+   Displays the contents of the homepage.
+
+9. Get-Content about.html
+   Displays the contents of the About page.
+
+10. git status
+    Shows the current state of the working directory.
+
+11. git add index.html about.html
+    Stages both HTML files for the initial commit.
+
+12. git commit -m "Create initial DevSpace website"
+    Creates the initial project commit.
+
+13. git log --oneline
+    Displays a short version of the commit history.
+
+14. git add index.html
+    Stages the modified homepage.
+
+15. git commit -m "Add development interests to homepage"
+    Saves the homepage changes in a new commit.
+
+16. git branch feature
+    Creates a new branch named feature.
+
+17. git switch feature
+    Switches to the feature branch.
+
+18. git branch
+    Lists the available local branches and identifies the active branch.
+
+19. git add about.html
+    Stages the modified About page.
+
+20. git commit -m "Add technology section to about page"
+    Commits the changes made on the feature branch.
+
+21. git switch main
+    Switches back to the main branch.
+
+22. git add index.html
+    Stages the updated homepage on the main branch.
+
+23. git commit -m "Add development goal to homepage"
+    Records the additional homepage changes on main.
+
+24. git log --oneline --all --decorate
+    Displays commits across all branches with branch names.
+
+25. git merge --no-ff feature -m "Merge feature branch"
+    Merges feature into main and creates a separate merge commit.
+
+26. git log --oneline --graph --decorate --all
+    Displays the commit history as a graph, including branch and merge relationships.
+
+27. Set-Content .gitignore
+    Creates the Git ignore configuration file.
+
+28. New-Item debug.log -ItemType File
+    Creates a sample log file to test the ignore rule.
+
+29. New-Item temp -ItemType Directory
+    Creates a temporary folder.
+
+30. New-Item temp\notes.txt -ItemType File
+    Creates a sample file inside the temporary folder.
+
+31. git check-ignore -v debug.log temp/notes.txt
+    Checks which ignore rules apply to the sample files.
+
+32. git add .gitignore
+    Stages the ignore configuration.
+
+33. git commit -m "Add rules to ignore temporary files"
+    Commits the ignore configuration.
+
+34. New-Item revert-demo.txt -ItemType File
+    Creates a temporary file for the revert demonstration.
+
+35. Set-Content revert-demo.txt
+    Adds demonstration text to the temporary file.
+
+36. git add revert-demo.txt
+    Stages the demonstration file.
+
+37. git commit -m "Add file for revert demonstration"
+    Creates the additional commit that will be reverted.
+
+38. git revert --no-edit HEAD
+    Creates a new commit that reverses the latest commit.
+
+39. Test-Path revert-demo.txt
+    Checks whether the reverted file still exists.
+
+40. git remote add origin https://github.com/prakash200627/DevSpace.git
+    Connects the local repository to the GitHub repository.
+
+41. git remote -v
+    Displays the configured remote repository URLs.
+
+42. git push -u origin main
+    Pushes the main branch to GitHub and sets its upstream.
+
+43. git push -u origin feature
+    Pushes the feature branch to GitHub and sets its upstream.
+
+44. git branch -a
+    Lists local and remote branches.
+
+45. git add git_commands.txt
+    Stages the Git command documentation file.
+
+46. git commit -m "Add Git command documentation"
+    Saves the command documentation in the repository.
+
+47. git push
+    Pushes the latest committed changes to GitHub.
+
